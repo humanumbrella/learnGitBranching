@@ -3,7 +3,7 @@
 > Just tweaked the delay between levels...
 
 [![Build Status](https://travis-ci.org/pcottle/learnGitBranching.svg?branch=master)](https://travis-ci.org/pcottle/learnGitBranching)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://github.com/pcottle/learnGitBranching/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)](https://humanumbrella.github.io/learnGitBranching/pulls)
 
 LearnGitBranching is a git repository visualizer, sandbox, and a series of educational tutorials and challenges. Its primary purpose is to help developers understand git through the power of visualization (something that's absent when working on the command line). This is achieved through a game with different levels to get acquainted with the different git commands.
 
@@ -12,10 +12,10 @@ You can input a variety of commands into LearnGitBranching (LGB) -- as commands 
 ![demo-gif](https://user-images.githubusercontent.com/7308241/39848730-040bd09e-53df-11e8-964e-2d48f35a4355.gif)
 
 This visualization combined with tutorials and "levels" can help both beginners and intermediate developers polish their version control skills. A quick demo is available here:
-https://pcottle.github.com/learnGitBranching/?demo
+https://humanumbrella.github.io/learnGitBranching/?demo
 
 Or, you can launch the application normally here:
-https://pcottle.github.com/learnGitBranching/
+https://humanumbrella.github.io/learnGitBranching/
 
 ### Sandbox Mode
 
