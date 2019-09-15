@@ -1515,7 +1515,7 @@ GitEngine.prototype.pullFinishWithMerge = function(
 
   // delay and merge
   chain = chain.then(function() {
-    return this.animationFactory.getDelayedPromise(700);
+    return this.animationFactory.getDelayedPromise(500);
   }.bind(this));
   chain = chain.then(function() {
     var newCommit = this.merge(remoteBranch);

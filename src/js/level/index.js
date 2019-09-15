@@ -169,7 +169,7 @@ var Level = Sandbox.extend({
     if (!this.testOption('noStartCommand') && method !== 'importLevelNow') {
       Main.getEventBaton().trigger(
         'commandSubmitted',
-        'hint; delay 2000; show goal'
+        'hint; delay 500; show goal'
       );
     }
   },

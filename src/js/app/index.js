@@ -177,9 +177,9 @@ var initDemo = function(sandbox) {
   if (params.hasOwnProperty('demo')) {
     commands = [
       "git commit; git checkout -b bugFix C1; git commit; git merge master; git checkout master; git commit; git rebase bugFix;",
-      "delay 1000; reset;",
+      "delay 250; reset;",
       "level advanced1 --noFinishDialog --noStartCommand --noIntroDialog;",
-      "delay 2000; show goal; delay 1000; hide goal;",
+      "delay 500; show goal; delay 250; hide goal;",
       "git checkout bugFix; git rebase master; git checkout side; git rebase bugFix;",
       "git checkout another; git rebase side; git rebase another master;",
       "help; levels"
@@ -187,24 +187,24 @@ var initDemo = function(sandbox) {
   } else if (params.hasOwnProperty('hgdemo')) {
     commands = [
       'importTreeNow {"branches":{"master":{"target":"C3","id":"master"},"feature":{"target":"C2","id":"feature"},"debug":{"target":"C4","id":"debug"}},"commits":{"C0":{"parents":[],"id":"C0","rootCommit":true},"C1":{"parents":["C0"],"id":"C1"},"C2":{"parents":["C1"],"id":"C2"},"C3":{"parents":["C1"],"id":"C3"},"C4":{"parents":["C2"],"id":"C4"}},"HEAD":{"target":"feature","id":"HEAD"}}',
-      'delay 1000',
+      'delay 250',
       'git rebase master',
-      'delay 1000',
+      'delay 250',
       'undo',
       'hg book',
-      'delay 1000',
+      'delay 250',
       'hg rebase -d master'
     ];
     commands = commands.join(';#').split('#'); // hax
   } else if (params.hasOwnProperty('hgdemo2')) {
     commands = [
       'importTreeNow {"branches":{"master":{"target":"C3","id":"master"},"feature":{"target":"C2","id":"feature"},"debug":{"target":"C4","id":"debug"}},"commits":{"C0":{"parents":[],"id":"C0","rootCommit":true},"C1":{"parents":["C0"],"id":"C1"},"C2":{"parents":["C1"],"id":"C2"},"C3":{"parents":["C1"],"id":"C3"},"C4":{"parents":["C2"],"id":"C4"}},"HEAD":{"target":"debug","id":"HEAD"}}',
-      'delay 1000',
+      'delay 250',
       'git rebase master',
-      'delay 1000',
+      'delay 250',
       'undo',
       'hg sum',
-      'delay 1000',
+      'delay 250',
       'hg rebase -d master'
     ];
     commands = commands.join(';#').split('#'); // hax
